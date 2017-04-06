@@ -505,7 +505,7 @@ classdef PRM < handle
                 writeVideo(ObjVid, Obj.movie_frame);
                 close(ObjVid);
             catch
-                fprintf('Saving the video failed \n')
+                warning('Saving the video failed \n')
             end
         end
     end
