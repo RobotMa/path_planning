@@ -494,6 +494,9 @@ classdef PRM < handle
             end
             
             fprintf('Making the movie into /video folder \n');
+            if ~exist('video', 'dir')
+               mkdir('video') 
+            end
             ObjVid = VideoWriter('../video/ES_PRM_GJK_5dofs.avi');
             open(ObjVid);
             writeVideo(ObjVid, Obj.movie_frame);
