@@ -497,10 +497,16 @@ classdef PRM < handle
             if ~exist('video', 'dir')
                mkdir('video') 
             end
-            ObjVid = VideoWriter('../video/ES_PRM_GJK_5dofs.avi');
-            open(ObjVid);
-            writeVideo(ObjVid, Obj.movie_frame);
-            close(ObjVid);
+            
+            % Save the video in the folder Video
+            try
+                ObjVid = VideoWriter('/video/ES_PRM_GJK_5dofs.avi');
+                open(ObjVid);
+                writeVideo(ObjVid, Obj.movie_frame);
+                close(ObjVid);
+            catch
+                fprintf('Saving the video failed \n')
+            end
         end
     end
 end
