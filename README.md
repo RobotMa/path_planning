@@ -1,11 +1,8 @@
 # path_planning
-A 2D PRM implemented in Matlab
+A 2D PRM implemented in Matlab with interfaces for different kinds of collision checking.
 
 ## Installation
-TO DO
-
-## How to Use
-TO DO
+Some of the code are not included and are necessary to run the planner. Please contact me if you want to get the access to the rest of the code.
 
 ## Future Work
-Extension to the 3D case
+To be extended to the 3D case.
