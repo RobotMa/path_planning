@@ -1,4 +1,4 @@
-# path_planning
+# Path Planning
 A 2D PRM implemented in Matlab with interfaces for different kinds of collision checking.
 
 ## Installation
